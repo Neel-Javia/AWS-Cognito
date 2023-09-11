@@ -1,0 +1,80 @@
+/* 
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .logo h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .nav-menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-menu ul li {
+    font-size: 18px;
+  }
+  
+  .nav-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .nav-menu ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  main {
+    padding: 20px;
+  }
+   */
+
+   /* Add these styles to the existing app.component.html */
+
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: #333; /* Change this to your desired header background color (black) */
+    color: #fff; /* Change this to your desired header text color (white) */
+  }
+  
+  .logo h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .nav-menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-menu ul li {
+    font-size: 18px;
+  }
+  
+  .nav-menu ul li a {
+    color: #fff; /* Change this to your desired link color (white) */
+    text-decoration: none;
+  }
+  
+  .nav-menu ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  

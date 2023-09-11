@@ -1,0 +1,57 @@
+<!-- 
+<div class="signup-container">
+  <mat-card class="signup-card">
+    <mat-card-header>
+      <mat-card-title>Sign Up</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form (ngSubmit)="signUp()">
+        <mat-form-field class="form-group">
+          <input matInput placeholder="Username" id="username" name="username" [(ngModel)]="username" required>
+        </mat-form-field>
+        <mat-form-field class="form-group">
+          <input matInput type="password" placeholder="Password" id="password" name="password" [(ngModel)]="password" required>
+        </mat-form-field>
+        <mat-form-field class="form-group">
+          <input matInput type="email" placeholder="Email" id="email" name="email" [(ngModel)]="email" required>
+        </mat-form-field>
+        <button mat-raised-button color="primary" type="submit">Sign Up</button>
+        <div class="error-message" *ngIf="signUpErrorMessage">{{ signUpErrorMessage }}</div>
+        <div class="success-message" *ngIf="signUpSuccessMessage">{{ signUpSuccessMessage }}</div>
+      </form>
+      <div class="verification">
+        <mat-form-field>
+          <input matInput placeholder="Verification Code" [(ngModel)]="verificationCode" required>
+        </mat-form-field>
+        <button mat-raised-button color="primary" (click)="confirmSignUp()">Confirm</button>
+        <div class="error-message" *ngIf="confirmErrorMessage">{{ confirmErrorMessage }}</div>
+        <div class="success-message" *ngIf="confirmSuccessMessage">{{ confirmSuccessMessage }}</div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div> -->
+
+<div class="signup-container">
+  <mat-card class="signup-card">
+    <mat-card-header>
+      <mat-card-title>Sign Up</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form (ngSubmit)="signUp()">
+        <mat-form-field class="form-group">
+          <input matInput placeholder="Username" id="username" name="username" [(ngModel)]="username" required>
+        </mat-form-field>
+        <mat-form-field class="form-group">
+          <input matInput type="password" placeholder="Password (min. 8 characters)" id="password" name="password" [(ngModel)]="password" required minlength="8">
+        </mat-form-field>
+        <mat-form-field class="form-group">
+          <input matInput type="email" placeholder="Email" id="email" name="email" [(ngModel)]="email" required>
+        </mat-form-field>
+        <button mat-raised-button color="primary" type="submit">Sign Up</button>
+        <div class="error-message" *ngIf="signUpErrorMessage">{{ signUpErrorMessage }}</div>
+        <div class="success-message" *ngIf="signUpSuccessMessage">{{ signUpSuccessMessage }}</div>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>
+

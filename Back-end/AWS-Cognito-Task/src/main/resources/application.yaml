@@ -1,0 +1,14 @@
+# AWS Cognito Configuration
+server:
+  port: 8282
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+
+
+cognito:
+  user-pool-id: ap-south-1_V78vKqgFd
+  region: ap-south-1
+  app-client-id: 35spc9ndf7cst2sci814qu9fco
+  jwk-set-uri: https://cognito-idp.ap-south-1.amazonaws.com/ap-south-1_V78vKqgFd/.well-known/jwks.json
